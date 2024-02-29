@@ -31,6 +31,16 @@
       top: 24px;
       left: 24px;
       position: relative;
+      background-color: cyan;
+      border-radius: 8px;
+    }
+    .imgconteiner:hover img{
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    .imgconteiner:hover .view{
+      opacity: 1;
     }
     .imgconteiner img{
       width: 100%;
@@ -119,6 +129,17 @@ border-radius: 50%;
   color:white;
   cursor: pointer;
 }
+
+.view{
+  position: absolute;
+  width: 48px !important;
+  height: 48px;
+  align-items: center;
+  z-index: 5;
+  top: 127px;
+  left: 127px;
+  opacity: 0;
+}
   </style>
 </head>
 <body>
@@ -126,6 +147,7 @@ border-radius: 50%;
 
   <div class="conteiner">
       <div class="imgconteiner">
+        <img class="view" src="images/icon-view.svg" />
       <img src="images/image-equilibrium.jpg" />
       </div>
       <div class="header-text-content">
